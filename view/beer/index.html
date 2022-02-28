@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>{{.title}} - {{.set.web_name}}</title>
+        <link rel="stylesheet" type="text/css" href="/view/beer/css/main.css">
+        {{.set.web_head}}
+    </head>
+    <body>
+        <div id="top">
+            <div class="left">
+                <a id="logo">{{.set.web_name}}</a>
+            </div>
+            <div class="right">
+                <a id="user">{{"user_page"|get_lang}}</a>
+            </div>
+        </div>
+        <div id="middle">
+            <h1>
+                {{.title}}
+            </h1>
+            <div>
+                {{.content}}
+            </div>
+        </div>
+        <div id="bottom">
+            
+        </div>
+    </body>
+</html>
